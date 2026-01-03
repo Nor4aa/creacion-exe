@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 import os
 import sys
 
+=======
+
+import os
+ 
+>>>>>>> 3d8a96f8d628301412a074c4ca590c1012706ab2
 from PySide6.QtCore import Qt # type: ignore
 from datetime import datetime
 from PySide6.QtGui import QAction, QIcon, QKeySequence, QTextCursor, QTextDocument, QFont, QColor, QTextCharFormat # type: ignore
 from PySide6.QtWidgets import QApplication, QMainWindow, QToolBar, QTextEdit, QFileDialog, QMessageBox, QWidget, QLineEdit, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QColorDialog, QFontDialog, QStatusBar, QCheckBox, QGroupBox, QRadioButton
 
+<<<<<<< HEAD
 def ruta_recurso(ruta_relativa):
     if hasattr(sys, "_MEIPASS"):
         base_path = sys._MEIPASS
@@ -13,6 +20,8 @@ def ruta_recurso(ruta_relativa):
         base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, ruta_relativa)
 
+=======
+>>>>>>> 3d8a96f8d628301412a074c4ca590c1012706ab2
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -188,6 +197,7 @@ class VentanaPrincipal(QMainWindow):
         barra_herramientas2.addAction(accion_pegar)
         self.menu_editar.addAction(accion_pegar)
 
+<<<<<<< HEAD
     try:
         ruta_datos = ruta_recurso("resources/datos.txt")
         with open(ruta_datos, "r", encoding="utf-8") as f:
@@ -196,6 +206,8 @@ class VentanaPrincipal(QMainWindow):
     except FileNotFoundError:
         print("datos.txt no encontrado (modo desarrollo)")
 
+=======
+>>>>>>> 3d8a96f8d628301412a074c4ca590c1012706ab2
     def salir_aplicacion(self):
         respuesta = QMessageBox.question(self,"Salir", "¿Deseas salir?",QMessageBox.Yes | QMessageBox.No)
         if respuesta == QMessageBox.Yes:
@@ -471,9 +483,12 @@ class VentanaPrincipal(QMainWindow):
         self.texto.textCursor().insertText(fecha_hora)
         self.status_bar.showMessage("Fecha y hora insertadas", 3000)
 
+<<<<<<< HEAD
    
     
 
+=======
+>>>>>>> 3d8a96f8d628301412a074c4ca590c1012706ab2
 if __name__ == "__main__":
     app = QApplication([])
     ventana1 = VentanaPrincipal()

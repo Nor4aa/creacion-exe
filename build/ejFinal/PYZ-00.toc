@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ('C:\\Users\\norit\\OneDrive\\Escritorio\\esef\\build\\ejFinal\\PYZ-00.pyz',
+=======
+('C:\\Users\\norit\\OneDrive\\Escritorio\\DAM2\\Desarrollo '
+ 'Interfances\\ese\\build\\ejFinal\\PYZ-00.pyz',
+>>>>>>> 3d8a96f8d628301412a074c4ca590c1012706ab2
  [('PySide6',
    'C:\\Users\\norit\\.virtualenvs\\norit-T_7gPoao\\Lib\\site-packages\\PySide6\\__init__.py',
    'PYMODULE'),
